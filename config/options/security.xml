@@ -1,0 +1,6 @@
+<application>
+  <component name="SSHConnectionSettings">
+    <successfulAuthentication user="git@www.easy2study.net" method="password" />
+    <successfulAuthentication user="zhangyamin@git.easy2study.net:29418" method="keyboard-interactive" />
+  </component>
+</application>

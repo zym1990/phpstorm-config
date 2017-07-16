@@ -1,0 +1,20 @@
+<application>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="StripeButton[Version Control].shown" count="13" />
+      <entry feature="git.branch.checkout.local" count="30" />
+      <entry feature="git.branch.checkout.remote" count="8" />
+      <entry feature="git.checkout.as.new.branch" count="2" />
+      <entry feature="ide.settings.Appearance" count="1" />
+      <entry feature="ide.settings.Colors_&amp;_Fonts" count="2" />
+      <entry feature="ide.settings.Laravel" count="1" />
+      <entry feature="ide.settings.Live_Templates" count="5" />
+      <entry feature="ide.settings.PHP" count="1" />
+      <entry feature="ideaapp.started" count="62" />
+      <entry feature="terminal.linux" count="21" />
+      <entry feature="tips.of.the.day.next" count="2" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenDirectoryProject" count="1" />
+      <entry feature="welcome.screen.null" count="1" />
+    </counts>
+  </component>
+</application>

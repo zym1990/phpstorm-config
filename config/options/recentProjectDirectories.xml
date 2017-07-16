@@ -1,0 +1,150 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="/var/www/Code/rms" />
+        <option value="/var/www/Code/portal" />
+        <option value="/var/www/Code/lms-lti" />
+        <option value="/var/www/Code/zhixing" />
+        <option value="/var/www/Code/zhixing-admin" />
+        <option value="/var/www/Code/zcyBackend" />
+        <option value="/var/www/Code/webPortal" />
+        <option value="/var/www/Code/beesplay" />
+        <option value="/var/www/Code/webBackend" />
+        <option value="/var/www/Code/webPortal/zcy" />
+        <option value="/var/www/Code/webBackend/zcy" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="/var/www/Code/portal" />
+      </list>
+    </option>
+    <option name="lastPath" value="/var/www/Code/rms" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="/var/www/Code/beesplay">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1489457042389" />
+              <option name="buildTimestamp" value="1479815288029" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/var/www/Code/lms-lti">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1497364846125" />
+              <option name="buildTimestamp" value="1479815303187" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/var/www/Code/portal">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1500189131915" />
+              <option name="buildTimestamp" value="1479815280384" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/var/www/Code/rms">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1500189554776" />
+              <option name="buildTimestamp" value="1479815280384" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/var/www/Code/webBackend">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1486947465933" />
+              <option name="buildTimestamp" value="1479815301300" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/var/www/Code/webBackend/zcy">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1486865601603" />
+              <option name="buildTimestamp" value="1479815339349" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/var/www/Code/webPortal">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1489801251988" />
+              <option name="buildTimestamp" value="1479815307836" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/var/www/Code/webPortal/zcy">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1486877640836" />
+              <option name="buildTimestamp" value="1479815339349" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/var/www/Code/zcyBackend">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1493765275512" />
+              <option name="buildTimestamp" value="1479815309044" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/var/www/Code/zhixing">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1495075036984" />
+              <option name="buildTimestamp" value="1479815286059" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/var/www/Code/zhixing-admin">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-163.7743.50" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1494812002183" />
+              <option name="buildTimestamp" value="1479815293436" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

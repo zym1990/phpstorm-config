@@ -1,0 +1,30 @@
+<templateSet group="zhangmin">
+  <template name="__construct" value="public function __construct(Request $request)&#10;    {&#10;        $this-&gt;middleware(function ($request, $next) {&#10;            $content$&#10;&#10;            return $next($request);&#10;        });&#10;    }" description="构造函数__construct" toReformat="false" toShortenFQNames="true">
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="download" value="public function download($fileName)&#10;    {&#10;        $path = storage_path(&quot;$folder$/$fileName&quot;);&#10;        $exists = File::exists($path);&#10;        if (!$exists) {&#10;            return view('$404$');&#10;        }&#10;&#10;        return response()-&gt;download(storage_path(&quot;$folder$/$fileName&quot;));&#10;    }" description="下载文件" toReformat="false" toShortenFQNames="true">
+    <variable name="folder" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="404" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="byte_format" value="&#10;/**&#10; * 字节格式化 把字节数格式为 B K M G T P E Z Y 描述的大小&#10; *&#10; * @param int $size 大小&#10; * @param int $dec 显示类型&#10; * @return int&#10; */&#10;function byte_format($size, $dec = 1)&#10;{&#10;    $a = [&quot;B&quot;, &quot;KB&quot;, &quot;MB&quot;, &quot;GB&quot;, &quot;TB&quot;, &quot;PB&quot;, &quot;EB&quot;, &quot;ZB&quot;, &quot;YB&quot;];&#10;    $pos = 0;&#10;    while ($size &gt;= 1024) {&#10;        $size /= 1024;&#10;        $pos++;&#10;    }&#10;&#10;    return round($size, $dec) . &quot; &quot; . $a[$pos];&#10;}" description="字节格式化" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ajax" value="            layer.load(2);&#10;            $.ajaxSetup({ headers: { 'X-CSRF-TOKEN': '{!! csrf_token() !!}' }});&#10;            $.ajax({&#10;                url: '{{ url('$url$') }}',&#10;                type: '$method$',&#10;                data: {$data$},&#10;                dataType: 'json',&#10;                cache: false,&#10;                async:true,&#10;                success: function (data) {&#10;                    layer.closeAll('loading');&#10;                    if (data.code) {&#10;                        layer.msg(data.error);&#10;                        return;&#10;                    }&#10;                    $content$&#10;                },&#10;                error: function (data) {&#10;                    layer.closeAll('loading');&#10;                    $conent$&#10;                }&#10;            })" description="ajax请求" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="conent" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

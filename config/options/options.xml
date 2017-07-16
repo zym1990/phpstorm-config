@@ -1,0 +1,25 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="evlsprt3.163" value="10" />
+    <property name="PhpStorm.InitialConfiguration" value="true" />
+    <property name="PhpStorm.dumbRunEnabled" value="true" />
+    <property name="PhpStorm.initialConfigurationShown" value="true" />
+    <property name="file.chooser.recent.files" value="/var/www/Code/rms&#10;/var/www/Code/lms-lti&#10;/var/www/Code/portal&#10;/var/www/Code/zhixing&#10;/var/www/Code/zhixing-admin&#10;/var/www/Code/zcyBackend&#10;/var/www/Code/webPortal&#10;/var/www/Code/beesplay&#10;/var/www/Code/webPortal/zcy/resources/views&#10;/var/www/Code/zcyBackend/resources/views&#10;/var/www/Code/zcyBackend/app/Http/Controllers&#10;/var/www/Code/beesplay/ResourceMgtSys&#10;/var/www/Code/webBackend&#10;/var/www/Code/webPortal/zcy&#10;/var/www/Code/webBackend/zcy" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="lastTip" value="58" />
+    <property name="Copy.OpenInEditor" value="false" />
+    <property name="OpenOrAttachDialog.OpenMode" value="new" />
+    <property name="PLUGIN_FILTER" value="live edit&#10;laravel" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.3081862" />
+    <property name="CommittedChanges.SplitterProportions.0" value="700" />
+    <property name="CommittedChanges.SplitterProportions.1" value="500" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.0" value="69" />
+    <property name="evlsprt.163" value="15ac0df4802" />
+    <property name="evlsprt2.163" value="15aa72552ed" />
+    <property name="com.intellij.history.integration.ui.views.DirectoryHistoryDialog.0" value="300" />
+    <property name="settings.code.style.selected.tab.PHP" value="Other" />
+    <property name="emmet.last.wrap.abbreviations" value="ul" />
+    <property name="emmet.recent.wrap.abbreviations" value="ul" />
+  </component>
+</application>
