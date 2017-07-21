@@ -1,0 +1,273 @@
+<templateSet group="Brooks">
+  <template name=":extends" value="@extends('$NAME$')&#10;@section('content')&#10;    $VALUE$&#10;@endsection" description="extends" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="foreach" value="@foreach ($NAME$ as $VALUE$)&#10;    $END$&#10;@endforeach" description="@foreach" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="if" value="@if ($NAME$)&#10;    $END$&#10;@endif" description="@if" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fun" value="function $NAME$($VALUE$) {&#10;    $ENDS$&#10;}" description="function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENDS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form:text" value="{{-- $VALUE$ --}}&#10;&lt;div class=&quot;form-group {{ $errors-&gt;has('$NAME$') ? 'has-error' : '' }}&quot;&gt;&#10;    &lt;div class=&quot;col-md-12&quot;&gt;&#10;        &lt;label for=&quot;$NAME$&quot;&gt;$VALUE$: &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;&#10;        &lt;input type=&quot;text&quot; name=&quot;$NAME$&quot; id=&quot;$NAME$&quot; class=&quot;form-control&quot; placeholder=&quot;请输入$VALUE$&quot;&gt;&#10;        @if ($errors-&gt;has('$NAME$'))&#10;            &lt;span class=&quot;help-block&quot;&gt;{{ $errors-&gt;first('$NAME$') }}&lt;/span&gt;&#10;        @endif&#10;    &lt;/div&gt;&#10;&lt;/div&gt;$END$" description="Form text input one row" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form:password" value="{{-- $CONMMENT$ Form Input --}}&#10;&lt;div class=&quot;form-group {{ $errors-&gt;has('$NAME$') ? 'has-error' : '' }}&quot;&gt;&#10;    &lt;div class=&quot;col-md-12&quot;&gt;&#10;        &lt;label for=&quot;$NAME$&quot;&gt;$VALUE$: &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;&#10;        &lt;input type=&quot;password&quot; name=&quot;$NAME$&quot; id=&quot;$NAME$&quot; class=&quot;form-control&quot; placeholder=&quot;请输入$VALUE$&quot;&gt;&#10;        @if ($errors-&gt;has('$NAME$'))&#10;            &lt;span class=&quot;help-block&quot;&gt;{{ $errors-&gt;first('$NAME$') }}&lt;/span&gt;&#10;        @endif&#10;    &lt;/div&gt;&#10;&lt;/div&gt;$END$" description="Form password input" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONMMENT" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form:checkbox" value="{{-- Checkbox Form Input--}}&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;div class=&quot;col-md-offset-4 col-md-6&quot;&gt;&#10;        &lt;input type=&quot;checkbox&quot; name=&quot;$NAME$&quot; id=&quot;&quot;&gt;$VALUE$&#10;    &lt;/div&gt;&#10;&lt;/div&gt;$END$" description="Form checkbox input" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name=":submit" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;div class=&quot;col-md-offset-4 col-md-6&quot;&gt;&#10;        &lt;input type=&quot;submit&quot; value=&quot;$VALUE$&quot; class=&quot;btn btn-default&quot;&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;$END$" description="Form submit input" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="section" value="@section('$NAME$')&#10;    $END$&#10;@endsection" description="section" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="route::get" value="Route::get('$NAME$', '$VALUE$');" description="Route::get()" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="route::post" value="Route::post('$NAME$', '$VALUE$');" description="Route::post()" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="i" value="if ($NAME$) {&#10;    $END$&#10;}" description="if php" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name=":errors" value="@if ($errors-&gt;any())&#10;    &lt;ul class=&quot;list-group col-md-Offset-4&quot;&gt;&#10;        @foreach ($errors-&gt;all() as $error)&#10;            &lt;li class=&quot;list-group-item list-group-item-danger&quot;&gt;{{ $error }}&lt;/li&gt;&#10;        @endforeach&#10;    &lt;/ul&gt;&#10;@endif" description="errors" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form:email" value="{{-- $COMMENT$ --}}&#10;&lt;div class=&quot;form-group {{ $errors-&gt;has('$NAME$') ? 'has-error' : '' }}&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot; class=&quot;col-md-4 control-label&quot;&gt;$VALUE$&lt;/label&gt;&#10;    &lt;div class=&quot;col-md-6&quot;&gt;&#10;        &lt;input type=&quot;email&quot; name=&quot;$NAME$&quot; id=&quot;$NAME$&quot; class=&quot;form-control&quot; placeholder=&quot;$VALUE$&quot;&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;$END$" description="Form email input" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COMMENT" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name=":error" value="@if ($errors-&gt;has('$NAME$'))&#10;    &lt;div class=&quot;help-block&quot;&gt;{{ $errors-&gt;first('$NAME$') }}&lt;/div&gt;&#10;@endif$END$" description="error" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="route::group" value="Route::group(['prefix' =&gt; '$VALUE$'], function () {&#10;    $END$&#10;});" description="Route::group" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ajax" value="$.ajaxSetup({ headers: { 'X-CSRF-TOKEN': '{!! csrf_token() !!}' }});&#10;$.ajax({&#10;    url: '$URL$',&#10;    type: '$TYPE$',&#10;    data: {$DATA$},&#10;    dataType: 'json',&#10;    cache: false,&#10;    success: function (data) {&#10;        layer.closeAll('loading');&#10;        if (data.code) {&#10;            layer.msg(data.error);&#10;            return;&#10;        }&#10;        $SUCCESS$&#10;        window.location.reload();&#10;    },&#10;    error: function () {&#10;        layer.closeAll('loading');&#10;        layer.msg('网络错误');&#10;    }&#10;})" description="$.ajax" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DATA" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUCCESS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name=":click" value="$('$NAME$').click(function () {&#10;    $END$&#10;});" description="$().click()" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="route::resource" value="Route::resource('$NAME$', '$VALUE$');" description="Route::resource()" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name=":form" value="&lt;form action=&quot;$ACTION$&quot; method=&quot;POST&quot; class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;&#10;    {{ csrf_field() }}&#10;    $END$&#10;&lt;/form&gt;" description="Form" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form:method" value="&lt;form action=&quot;$ACTION$&quot; class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;&#10;    {{ csrf_field() }}&#10;    {{ method_field('$METHOD$') }}&#10;    $END$&#10;&lt;/form&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name=":foreach" value="foreach ($NAMES$ as $NAME$) {&#10;    $END$&#10;}" description="foreach" toReformat="false" toShortenFQNames="true">
+    <variable name="NAMES" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="view:compact" value="return view('$VIEW$', compact('$COMPACT$'));" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COMPACT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="view" value="return view('$VIEW$');" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name=":link" value="&lt;div class=&quot;pull-right&quot;&gt;{{ $NAME$-&gt;appends(Request::except('page'))-&gt;links() }}&lt;/div&gt;" description="paginate view link" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="route::patch" value="Route::patch('$NAME$', '$VALUE$');" description="Route::patch();" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form:textarea" value="{{-- $VALUE$ --}}&#10;&lt;div class=&quot;form-group {{ $errors-&gt;has('$NAME$') ? 'has-error' : '' }}&quot;&gt;&#10;    &lt;div class=&quot;col-md-12&quot;&gt;&#10;        &lt;label for=&quot;$NAME$&quot;&gt;$VALUE$: &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;&#10;        &lt;textarea name=&quot;$NAME$&quot; id=&quot;$NAME$&quot; class=&quot;form-control&quot; placeholder=&quot;请输入$VALUE$&quot;&gt;&lt;/textarea&gt;&#10;        @if ($errors-&gt;has('$NAME$'))&#10;            &lt;span class=&quot;help-block&quot;&gt;{{ $errors-&gt;first('$NAME$') }}&lt;/span&gt;&#10;        @endif&#10;    &lt;/div&gt;&#10;&lt;/div&gt;$END$" description="Form textarea" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="response" value="return response()-&gt;json($JSON$);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="JSON" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="transaction" value="DB::transaction(function () use ($USE$) {&#10;    $START$&#10;});&#10;$END$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="USE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="button:back" value="&lt;a href=&quot;javascript:window.history.back();&quot; class=&quot;btn btn-default&quot;&gt;返回&lt;/a&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="button:group" value="{{-- 提交 --}}&#10;&lt;div class=&quot;pull-right&quot;&gt;&#10;    &lt;a href=&quot;javascript:window.history.back();&quot; class=&quot;btn btn-default&quot;&gt;返回&lt;/a&gt;&#10;    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;确定&lt;/button&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="bootbox" value="bootbox.confirm({&#10;    title: &quot;删除&quot;,&#10;    message: &quot;该操作无法恢复，是否确认删除？&quot;,&#10;    buttons: {&#10;        cancel: {label: '&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; @lang('views/common.cancel_title')'},&#10;        confirm: {label: '&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt; @lang('views/common.sure_title')'}&#10;    },&#10;    callback: function (result) {&#10;        if (!result) return;&#10;        layer.load(2);&#10;        $CALLBACK$&#10;    }&#10;});" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="CALLBACK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="label:success" value="&lt;span class=&quot;label label-success&quot; style=&quot;float: none&quot;&gt;$VALUE$&lt;/span&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="label:warning" value="&lt;span class=&quot;label label-warning&quot; style=&quot;float: none&quot;&gt;$VALUE$&lt;/span&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="label:danger" value="&lt;span class=&quot;label label-danger&quot; style=&quot;float: none&quot;&gt;$VALUE$&lt;/span&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="form:show" value="{{-- $NAME$ --}}&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;div class=&quot;col-md-12&quot;&gt;&#10;        &lt;label class=&quot;col-md-2 control-label&quot;&gt;$NAME$：&lt;/label&gt;&#10;        &lt;div class=&quot;col-md-10 form-control-static&quot;&gt;$VALUE$&lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="form:div" value="&lt;div class=&quot;form-horizontal&quot;&gt;&#10;    $START$&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="paginate:sort" value="$key + 1 + ($NAME$-&gt;currentPage() - 1) * $NAME$-&gt;perPage()" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pr" value="echo '&lt;pre&gt;';&#10;print_r($NAME$);&#10;exit;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
